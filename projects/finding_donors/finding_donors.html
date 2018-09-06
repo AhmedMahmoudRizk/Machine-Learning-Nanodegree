@@ -12901,8 +12901,12 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
 <ul>
-<li>the training the model with people with 13 different features , every people are added to the system have this features fields</li>
-<li>Using a distance metric such as the standard Euclidean metric and caculating k smallest distance from the new people feature in order to find the most k similar people in your training data Average the k similar people's output as new people's output</li>
+<li><p>Adaboost is a boosting type ensemble learner. This method works by combining multiple individual "weak" learning hypotheses to create one strong model. Each weak hypothesis used is better at classifying the data than random chance. However, it's the combination of all of these independent weak learning hypotheses what makes the model more capable of predicting accurately on unseen data than each of the individual hypothesis would.</p>
+</li>
+<li><p>This algorithm is trained iteratively. During each training iteration, the model attempts to correctly classify the training data. Based on how well it performed during the iteration, the algorithm assigns higher weights to the observations that it was unable to classify correctly. On the next training iteration, the algorithm focuses on those more complex, initially missclassified observations, and tries to classify them correctly. Again based on the results of this training iteration Adaboost assigns higher weights to those observations that were missclassified. This process is repeated for a number of iterations defined by the user in an attempt to find the set of weighted hypotheses that combined will perform best on unseen data.</p>
+</li>
+<li><p>Finally, to make predictions, Adaboost uses the weak independent hypotheses on which it was trained during each iteration and developsindividual predictions that are then weighted accordingly to come up with the most probable single strong prediction.</p>
+</li>
 </ul>
 
 </div>
